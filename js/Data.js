@@ -1,5 +1,6 @@
 export const services = [
     {
+        id: 1,
         serviceName: 'Product Origin',
         title: null,
         image: '../images/product_origin.png',
@@ -15,8 +16,10 @@ export const services = [
                 'Periodical quality inspections for your stored products and before orders handling'
             ],
             links: null
-        }
+        },
+        colorCode: '#058DBF'
     },{
+        id: 2,
         serviceName: 'Warehouse',
         title: 'WAREHOUSE',
         image: '../images/warehouse.png',
@@ -28,8 +31,10 @@ export const services = [
                 linkTitle: 'Read More',
                 link: '#'
             }]
-        }
+        },
+        colorCode: '#05A679'
     },{
+        id: 3,
         serviceName: 'DISTRIBUTION',
         title: 'WAREHOUSE',
         image: null,
@@ -41,16 +46,20 @@ export const services = [
                 linkTitle: 'Read More',
                 link: '#'
             }]
-        }
+        },
+        colorCode: '#EDDD01'
     },{
+        id: 4,
         serviceName: 'DESTINATION',
-        title: 'WAREHOUSE',
+        title: null,
         image: null,
         serviceDetails: 'We have a fully-fledged range of warehousing facilities and services that are far from the business-as-usual. All of our facilities are fully automated and we also utilize the most advanced handling systems that can contribute high volume pallet loads, as well as single product loads.',
-        anotherDetails: null
+        anotherDetails: null,
+        colorCode: '#F28F18'
     },{
+        id: 5,
         serviceName: 'GROWTH INTEGRATION',
-        title: 'WAREHOUSE',
+        title: null,
         image: null,
         serviceDetails: 'We have a fully-fledged range of warehousing facilities and services that are far from the business-as-usual. All of our facilities are fully automated and we also utilize the most advanced handling systems that can contribute high volume pallet loads, as well as single product loads.',
         anotherDetails: {
@@ -60,6 +69,7 @@ export const services = [
                 linkTitle: 'Read More',
                 link: '#'
             }]
-        }
+        },
+        colorCode: '#FD2635'
     }
 ]
