@@ -1,5 +1,20 @@
+.fa-bars{
+    color: #058DBF;
+    font-size: 40px;
+}
+
 .navbar-nav{
-    .nav-link{
-        text-transform: uppercase;
+    .nav-item{
+        .nav-link{
+            text-transform: uppercase;
+            color: #999999;
+            font-weight: bold;
+        }
+        &.active{
+            
+            a{
+                color: #058DBF;
+            }
+        }
     }
 }

@@ -1,6 +1,17 @@
 /* import components */
-.navbar-nav .nav-link {
+.fa-bars {
+  color: #058DBF;
+  font-size: 40px;
+}
+
+.navbar-nav .nav-item .nav-link {
   text-transform: uppercase;
+  color: #999999;
+  font-weight: bold;
+}
+
+.navbar-nav .nav-item.active a {
+  color: #058DBF;
 }
 
 .hero {
