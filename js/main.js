@@ -99,22 +99,22 @@ $(document).ready(function(){
         nextArrow: '<i class="fas fa-arrow-circle-right"></i>',
         responsive: [
             {
-              breakpoint: 1024,
-              settings: {
-                slidesToShow: 3,
-              }
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                }
             },
             {
-              breakpoint: 600,
-              settings: {
-                slidesToShow: 2,
-              }
+                breakpoint: 900,
+                settings: {
+                    slidesToShow: 2,
+                }
             },
             {
-              breakpoint: 500,
-              settings: {
-                slidesToShow: 1,
-              }
+                breakpoint: 500,
+                settings: {
+                    slidesToShow: 1,
+                }
             }
         ]
     });
