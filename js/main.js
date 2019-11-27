@@ -16,18 +16,23 @@ services.map(service=>{
                 service.anotherDetails.data !== null?
                     (typeof service.anotherDetails.data === 'object') ?
 
-                        `<ul>
+                        `<ul class="data-list">
                         ${
                             jQuery.map( service.anotherDetails.data, function( item, index ) {
                                 return `<li class="list">${item}</li>`;
                             })
                         }
+
                         </ul>`
                     :''
                 :''
             :''
         }
     </div>`;
+    // remove comma while printing array
+    $(".data-list").each(function(){
+        $(this).html($(this).html().replace(/,/g , ''));
+    });
     $('.services_details').append(serviceDetails);
 })
 
@@ -54,4 +59,23 @@ $(document).ready(function(){
         // show the selected service details
         $('.service_Details#'+panelToShow).addClass('active')
     })
+
+    clients.map(client=>{
+        let clientData = `<img src="${client.logo}" alt="${client.name}" height="100px" width="100px"/>`;
+        $('.slick-slider').append(clientData)
+    })
+
+    $(".slick-slider").slick({
+        infinite: true,
+        speed: 1000,
+        slidesToShow: 3,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        slidesToScroll: 1,
+        accessibility: true,
+        arrows: true,
+        pauseOnHover: true,
+        prevArrow: '<i class="fas fa-arrow-circle-left"></i>',
+        nextArrow: '<i class="fas fa-arrow-circle-right"></i>'
+    });
 });

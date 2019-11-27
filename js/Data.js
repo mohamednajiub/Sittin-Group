@@ -66,3 +66,19 @@ const services = [
         colorCode: '#FD2635'
     }
 ]
+
+const clients = [
+    {
+        name: 'carrefour',
+        logo: './images/proactivity/carrefour.svg'
+    },{
+        name: 'Egypt Air',
+        logo: './images/proactivity/EgyptAir.svg'
+    },{
+        name: 'Sheraton',
+        logo: './images/proactivity/Sheraton.svg'
+    },{
+        name: 'Frico',
+        logo: './images/proactivity/frico.png'
+    }
+]
