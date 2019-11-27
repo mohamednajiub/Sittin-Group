@@ -1,4 +1,8 @@
 /* import components */
+body {
+  background-color: #F9F9F9;
+}
+
 .fa-bars {
   color: #058DBF;
   font-size: 40px;
@@ -107,6 +111,7 @@
 }
 
 .services_details .service_Details .details-container {
+  background-color: #fff;
   padding: 0 0 40px 40px;
 }
 
