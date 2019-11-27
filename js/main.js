@@ -96,6 +96,12 @@ $(document).ready(function(){
         arrows: true,
         pauseOnHover: true,
         prevArrow: '<i class="fas fa-arrow-circle-left"></i>',
-        nextArrow: '<i class="fas fa-arrow-circle-right"></i>'
+        nextArrow: '<i class="fas fa-arrow-circle-right"></i>',
+        mobileFirst: true,
+        responsive: {
+            500: {
+                slidesToShow: 1,
+            }
+        }
     });
 });

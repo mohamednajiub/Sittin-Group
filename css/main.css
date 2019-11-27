@@ -173,7 +173,19 @@ body {
 
 .proactivity p {
   font-size: 25px;
-  width: 60%;
+  width: 70%;
+  line-height: 2;
+}
+
+.proactivity p mark {
+  background-color: #e2b29673;
+}
+
+@media screen and (max-width: 575.98px) {
+  .proactivity p {
+    width: 100%;
+    font-size: 1rem;
+  }
 }
 
 .proactivity .slick-slider i {

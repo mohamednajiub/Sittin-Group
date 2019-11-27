@@ -1,7 +1,15 @@
 .proactivity{
     p{
         font-size: 25px;
-        width: 60%;
+        width: 70%;
+        line-height: 2;
+        mark{
+            background-color: #e2b29673;
+        }
+        @media screen and (max-width: 575.98px){
+            width: 100%;
+            font-size: 1rem;
+        }
     }
     .slick-slider{
         i{
