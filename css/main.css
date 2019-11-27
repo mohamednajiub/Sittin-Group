@@ -74,6 +74,22 @@
   opacity: 1;
 }
 
+@media screen and (max-width: 575.98px) {
+  .service_tabs .service_tab {
+    margin-right: 5px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 575.98px) {
+  .service_tabs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow-y: auto;
+  }
+}
+
 .services_details .service_Details {
   display: none;
   -webkit-transition: 0.5s all ease-in-out;
@@ -85,6 +101,25 @@
   height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.services_details .service_Details p {
+  margin-top: 20px;
+}
+
+.services_details .service_Details ul.data-list {
+  list-style: none;
+}
+
+.services_details .service_Details ul.data-list li::before {
+  /* \2022 is the CSS Code/unicode for a disc */
+  content: "\2022";
+  color: #058DBF;
+  display: inline-block;
+  width: 1em;
+  margin-left: -0.9em;
+  font-weight: bold;
+  font-size: 1.5rem;
 }
 
 .services_details .service_Details.active {

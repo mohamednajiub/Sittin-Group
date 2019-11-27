@@ -16,6 +16,14 @@
         &.active{
             opacity: 1;
         }
+        @media screen and (max-width: 575.98px){
+            margin-right: 5px;
+            text-align: center;
+        }
+    }
+    @media screen and (max-width: 575.98px){
+        display: flex;
+        overflow-y: auto;
     }
 }
 .services_details{
@@ -27,8 +35,26 @@
             height: 200px;
             object-fit: cover;
         }
+        p{
+            margin-top: 20px;
+        }
+        ul.data-list{
+            list-style: none;
+            li{
+                &::before {
+                    /* \2022 is the CSS Code/unicode for a disc */ 
+                    content: "\2022";   
+                    color: #058DBF;  
+                    display: inline-block;  
+                    width: 1em; 
+                    margin-left: -0.9em; 
+                    font-weight: bold; 
+                    font-size:1.5rem; 
+                }
+            }
+        }
         &.active{
             display: block;
         }
-    }
+    }   
 }
