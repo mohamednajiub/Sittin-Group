@@ -4,7 +4,10 @@ services.map(service=>{
     let listItem = `<li rel="${service.id}" style="background-color:${service.colorCode};" class="service_tab">${service.serviceName}</li>`
     $('.service_tabs').append(listItem);
     let serviceDetails = `<div id="${service.id}" class="service_Details">
+    <header>
         ${service.image?`<img class="service_image" src="${service.image}" alt="${service.serviceName}">`:''}
+    </header>
+        <div class="details-container">
         ${service.serviceName?`<h3 class="service-name" style="color:${service.colorCode};">${service.serviceName}</h3>`:''}
         <p>${service.serviceDetails}</p>
         ${
@@ -44,6 +47,7 @@ services.map(service=>{
                 :''
             :''
         }
+        </div>
     </div>`;
     // remove comma while printing array
     $(".data-list").each(function(){

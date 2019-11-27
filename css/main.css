@@ -91,9 +91,12 @@
 }
 
 .services_details .service_Details {
+  -webkit-box-shadow: 0px 2px 10px -3px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 2px 10px -3px rgba(0, 0, 0, 0.4);
   display: none;
   -webkit-transition: 0.5s all ease-in-out;
   transition: 0.5s all ease-in-out;
+  padding: 0;
 }
 
 .services_details .service_Details .service_image {
@@ -103,19 +106,29 @@
      object-fit: cover;
 }
 
-.services_details .service_Details .list-heading {
-  text-transform: capitalize;
+.services_details .service_Details .details-container {
+  padding: 0 0 40px 40px;
 }
 
-.services_details .service_Details .service-name, .services_details .service_Details p {
+@media screen and (max-width: 575.98px) {
+  .services_details .service_Details .details-container {
+    padding: 10px;
+  }
+}
+
+.services_details .service_Details .details-container .service-name, .services_details .service_Details .details-container p {
   margin-top: 20px;
 }
 
-.services_details .service_Details ul.data-list {
+.services_details .service_Details .details-container .list-heading {
+  text-transform: capitalize;
+}
+
+.services_details .service_Details .details-container ul.data-list {
   list-style: none;
 }
 
-.services_details .service_Details ul.data-list li::before {
+.services_details .service_Details .details-container ul.data-list li::before {
   /* \2022 is the CSS Code/unicode for a disc */
   content: "\2022";
   color: #058DBF;
@@ -126,11 +139,11 @@
   font-size: 1.5rem;
 }
 
-.services_details .service_Details .actions {
+.services_details .service_Details .details-container .actions {
   margin-top: 50px;
 }
 
-.services_details .service_Details .actions .action-button {
+.services_details .service_Details .details-container .actions .action-button {
   padding: 15px 10px;
   color: #fff;
   background-color: #05A679;
@@ -144,7 +157,7 @@
 }
 
 @media screen and (max-width: 575.98px) {
-  .services_details .service_Details .actions .action-button {
+  .services_details .service_Details .details-container .actions .action-button {
     width: 100%;
   }
 }
