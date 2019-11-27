@@ -92,4 +92,67 @@
   -webkit-box-shadow: 0px 5px 17px -3px rgba(0, 0, 0, 0.75);
           box-shadow: 0px 5px 17px -3px rgba(0, 0, 0, 0.75);
 }
+
+footer {
+  background-color: #058DBF;
+}
+
+footer h4 {
+  text-transform: uppercase;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 5px;
+}
+
+footer ul li a {
+  color: white;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+footer ul li a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+footer form .newsLetter {
+  width: 100%;
+  padding: 3px;
+  font-size: 13px;
+  border: 1px solid #058DBF;
+  -webkit-box-shadow: 0px 2px 10px -3px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 2px 10px -3px rgba(0, 0, 0, 0.75);
+  outline: 0;
+}
+
+footer form button {
+  width: 100%;
+  background-color: #fff;
+  color: #058DBF;
+  border: none;
+  -webkit-box-shadow: 0px 2px 10px -3px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 2px 10px -3px rgba(0, 0, 0, 0.75);
+}
+
+footer .social-links li {
+  background-color: #fff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  line-height: 25px;
+  margin: auto;
+  text-align: center;
+  -webkit-box-shadow: 0px 2px 10px -3px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 2px 10px -3px rgba(0, 0, 0, 0.75);
+}
+
+footer .social-links li a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+footer .social-links li a i {
+  line-height: 50px;
+  font-size: 25px;
+  color: #058DBF;
+}
 /*# sourceMappingURL=main.css.map */
