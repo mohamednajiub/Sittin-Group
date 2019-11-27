@@ -5,6 +5,7 @@ services.map(service=>{
     $('.service_tabs').append(listItem);
     let serviceDetails = `<div id="${service.id}" class="service_Details">
         ${service.image?`<img class="service_image" src="${service.image}" alt="${service.serviceName}">`:''}
+        ${service.serviceName?`<h3 class="service-name" style="color:${service.colorCode};">${service.serviceName}</h3>`:''}
         <p>${service.serviceDetails}</p>
         ${
             service.anotherDetails !== null?
@@ -24,6 +25,21 @@ services.map(service=>{
                         }
 
                         </ul>`
+                    :''
+                :''
+            :''
+        }
+        ${
+            service.anotherDetails !== null?
+                service.anotherDetails.links !== null?
+                    (typeof service.anotherDetails.links === 'object') ?
+                        `<div class="actions">
+                        ${
+                            jQuery.map( service.anotherDetails.links, function( item, index ) {
+                                return `<a class="action-button" href="${item.link}" style="background-color: ${service.colorCode}">${item.linkTitle}</a>`;
+                            })
+                        }
+                        </div>`
                     :''
                 :''
             :''

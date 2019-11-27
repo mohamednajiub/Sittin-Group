@@ -35,7 +35,10 @@
             height: 200px;
             object-fit: cover;
         }
-        p{
+        .list-heading{
+            text-transform: capitalize;
+        }
+        .service-name,p{
             margin-top: 20px;
         }
         ul.data-list{
@@ -50,6 +53,24 @@
                     margin-left: -0.9em; 
                     font-weight: bold; 
                     font-size:1.5rem; 
+                }
+            }
+        }
+        .actions{
+            margin-top: 50px;
+            .action-button{
+                padding: 15px 10px;
+                color: #fff;
+                background-color: #05A679;
+                display: block;
+                width: 30%;
+                border: 1px solid transparent;
+                margin: auto;
+                text-align: center;
+                text-transform: uppercase;
+                font-weight: bold;
+                @media screen and (max-width: 575.98px){
+                    width: 100%;
                 }
             }
         }
