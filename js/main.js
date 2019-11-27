@@ -97,11 +97,25 @@ $(document).ready(function(){
         pauseOnHover: true,
         prevArrow: '<i class="fas fa-arrow-circle-left"></i>',
         nextArrow: '<i class="fas fa-arrow-circle-right"></i>',
-        mobileFirst: true,
-        responsive: {
-            500: {
+        responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+              }
+            },
+            {
+              breakpoint: 500,
+              settings: {
                 slidesToShow: 1,
+              }
             }
-        }
+        ]
     });
 });
