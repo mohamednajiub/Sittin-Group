@@ -18,6 +18,10 @@
             p{
                 font-size: 21pt;
                 width: 70%;
+                @media screen and (max-width: 575.98px){
+                    width: 100%;
+                    font-size: 1rem;
+                }
             }
         }
         
