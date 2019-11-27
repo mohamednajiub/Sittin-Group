@@ -1,4 +1,4 @@
-export const services = [
+const services = [
     {
         id: 1,
         serviceName: 'Product Origin',
@@ -7,14 +7,7 @@ export const services = [
         serviceDetails: 'We have a fully-fledged range of warehousing facilities and services that are far from the business-as-usual. All of our facilities are fully automated and we also utilize the most advanced handling systems that can contribute high volume pallet loads, as well as single product loads.',
         anotherDetails: {
             title: 'our warehousing services include:',
-            data: [
-                'Year round / seasonal storage',
-                'Automated sorting and inventory managment',
-                'Pre-retailing and co-packing',
-                'Real-time traceability per product and/or per batch number',
-                'Inventory insurance and safeguarding',
-                'Periodical quality inspections for your stored products and before orders handling'
-            ],
+            data: ['Year round / seasonal storage','Automated sorting and inventory managment','Pre-retailing and co-packing','Real-time traceability per product and/or per batch number','Inventory insurance and safeguarding','Periodical quality inspections for your stored products and before orders handling'],
             links: null
         },
         colorCode: '#058DBF'
