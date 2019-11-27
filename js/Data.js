@@ -3,7 +3,7 @@ const services = [
         id: 1,
         serviceName: 'Product Origin',
         title: null,
-        image: '../images/product_origin.png',
+        image: './images/product_origin.png',
         serviceDetails: 'We have a fully-fledged range of warehousing facilities and services that are far from the business-as-usual. All of our facilities are fully automated and we also utilize the most advanced handling systems that can contribute high volume pallet loads, as well as single product loads.',
         anotherDetails: {
             title: 'our warehousing services include:',
@@ -15,7 +15,7 @@ const services = [
         id: 2,
         serviceName: 'Warehouse',
         title: 'WAREHOUSE',
-        image: '../images/warehouse.png',
+        image: './images/warehouse.png',
         serviceDetails: 'We have a fully-fledged range of warehousing facilities and services that are far from the business-as-usual. All of our facilities are fully automated and we also utilize the most advanced handling systems that can contribute high volume pallet loads, as well as single product loads.',
         anotherDetails: {
             title: null,
